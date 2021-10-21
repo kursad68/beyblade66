@@ -44,7 +44,7 @@ public class EnemyGround : MonoBehaviour
             }
             else
             {
-                EventManager.OnGameEnd.Invoke();
+                EventManager.OnGameLost.Invoke();
                 ch.sens = 0;
                 ch.speed = 0;
             }

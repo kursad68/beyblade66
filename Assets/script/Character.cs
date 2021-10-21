@@ -137,7 +137,7 @@ public class Character : MonoBehaviour
         else
         {
             finish = true;
-            EventManager.OnGameEnd.Invoke();
+            EventManager.OnGameWin.Invoke();
         }
         
     }

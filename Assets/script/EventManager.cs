@@ -11,7 +11,8 @@ public static class EventManager
     public static Action<float> OnCameraLocation;
     public static Action<int> OnDeleteFriendly;
     public static UnityEvent Onfinish = new UnityEvent();
-    public static UnityEvent OnGameEnd = new UnityEvent();
+    public static UnityEvent OnGameLost = new UnityEvent();
+    public static UnityEvent OnGameWin = new UnityEvent();
 
 
 }
