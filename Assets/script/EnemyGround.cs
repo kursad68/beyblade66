@@ -32,6 +32,8 @@ public class EnemyGround : MonoBehaviour
            else if (enumType == ExtractionEnum.division)
             {
                 x = ch.topFriendly / DestroyFriendObstacle;
+            
+                x = ch.topFriendly - x;
                 Debug.Log(x);
                 EventManager.OnDeleteFriendly.Invoke(x);
                 isTriger = true;

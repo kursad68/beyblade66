@@ -10,9 +10,12 @@ public class GameManager : MonoBehaviour
     Character cM;
     [SerializeField]
     GameObject buttonGameobject;
+    [SerializeField]
+    Text text;
     bool isGameEnd;
     void Start()
     {
+        text.text = "Top Ball : 0";
         isGameEnd = false;
         slider.value = 0;
         cM = EventManager.OnCharacter.Invoke();
@@ -32,7 +35,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         slider.value = cM.topFriendly;
-     
+        text.text = "Top Ball  " + cM.topFriendly;
+         
     }
     IEnumerator enumerator()
     {
